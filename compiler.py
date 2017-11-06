@@ -64,11 +64,9 @@ def main():
             # print(c)
             program_code += bf_to_c_dict(c)
 
-    # program_code += "\n    return 0;\n}"
-    print("=============================")
-    print(program_code)
+    program_code += "\n    return 0;\n}"
+
     arquivo_c_exit.write(program_code)
-    arquivo_c_exit.write("\n}\n")
     arquivo_bf_input.close()
     arquivo_c_exit.close()
 

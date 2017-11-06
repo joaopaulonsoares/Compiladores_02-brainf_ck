@@ -2,6 +2,7 @@
 #include <stdlib.h>
  int main(){
 	unsigned char *memory = malloc(sizeof(char)*30000);
+
 	unsigned char *ptr =  &memory[0];
 
 		++(*ptr);
@@ -166,4 +167,5 @@
 		*ptr = getchar();
 getchar();
 
+    return 0;
 }
